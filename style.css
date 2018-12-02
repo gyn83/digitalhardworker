@@ -32,7 +32,6 @@ body {
   
 .header {
   background: URL(image/header.jpg) center/cover;
-  height: 5rem;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -44,7 +43,11 @@ body {
   color: #f9e3ae;
   -webkit-text-stroke-width: 0.125rem;
   -webkit-text-stroke-color: black;
+   margin: 1rem;
 }
+
+
+
 
 .about-text {
   line-height: 1.6;
@@ -98,7 +101,6 @@ body {
   margin: 1.5rem auto;
   background-color: black;
 }
-
 
 
 
@@ -310,7 +312,7 @@ body {
   }
 
 .links {
-  margin: 1rem;
+  margin: .5rem;
 }
 .footer-wrapper {
   display: block;
@@ -322,6 +324,7 @@ body {
   -webkit-text-stroke-width: 0.125rem;
 -webkit-text-stroke-color: black;
   padding: 0 2.125rem;
+  font-size: 3rem;
 }
 
 i:hover { 
@@ -329,6 +332,8 @@ i:hover {
   transition: all 0.5s ease-in-out;
   filter: grayscale(20%);
 }
+
+
 
 .info {
   padding-bottom: .2rem;
@@ -345,3 +350,10 @@ i:hover {
   
    }
 
+@media (max-width:540px) {
+  .social-icon {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0.1rem;
+-webkit-text-stroke-color: black;
+  }
+}
