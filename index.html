@@ -11,12 +11,9 @@
       <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
     </head>
     <body>
-      
-      
       <div class="header">
         <div class="text-header"><h1>DIGITAL HARDWORKER</h1></div>
       </div>
-      
       <div class="about">
         <div class="about-wrapper">
           <div class="about-heading">
@@ -24,12 +21,28 @@
           <h2>Gyurkovits Norbert</h2>
           <p class="about-text-heading">Grafikus<br>IT tanuló</p>
           </div>
-          <div class="content-wrapper">
-          <p class="about-text">A nevem Gyurkovits Norbert. Budapesten élek 1983-ban születem.  2001-ben egy műszaki szakközépiskola elvégzése után, nagy fába vágtam a fejszémet és beléptem a munkaerőpiacra. Az elmúlt 17 évben dolgoztam  logisztika, vendéglátás, kereskedelem és pénzügyi területeken. Végeztem fizikai és szellemi munkát. 
-          Ez idő alatt rájöttem arra, hogy bizony szükségem van a  kihívásra, hogy olyan feladatokat oldhassak meg, amihez használni kell az agyamat, keresni kell a választ. Pár évvel ezelőtt kezdtem el foglalkozni, digitális grafikával hobby szinten. Néztem a tutorialokat és megtetszett nekem, hogy minden felmerülő kérdésre ott a válasz a neten, ha egy design megtetszett, biztos, hogy rövid keresgélés után, találtam egy videót, amelyben meg tudtam nézni, hogy is kell azt megvalósítani. Így egyre többet foglalkoztam ezzel, majd a dolog odáig jutott, hogy 2017-ben elvégeztem egy grafikus OKJ tanfolyamot.</p>
-          <p class="about-text">Közben az élet persze nem állt meg, az iskola és a tanulás miatt felhalmozódó feladatok utolértek, és emiatt muszáj volt egy pici szünetet tartani a tanulásban. Ez a kis kihagyás viszont elég volt arra, hogy kitaláljam, hogyan tovább. A grafikus képzés során, volt egy HTML, CSS minitanfolyam. Ahol is megtetszett ez a fajta munka, hiszen ez is egy olyan terület, ahol a munkámnak szinte azonnal látszik az eredménye, ráadásul a megoldásért néha törni kell a fejemet. :)
-          A célom, hogy folytassam a megkezdett utamat, szeretnék weboldalakat építeni és fejleszteni a tudásomat. A későbbiekben pedig az IT terület szélesebb palettáját is megismerni és dolgozni benne. Attól függően, hogy mi fekszik nekem és mire lesz elég idő. Ezt a weboldal egyfajta online névjegyként, hoztam létre. Egyrészről bemutatkozásként, másrészt, pedig, hogy saját magam is nyomon tudjam követni a fejlődésemet.</p>
-        </div>
+          <div class="text-wrapper">
+          <p class="about-text">A nevem Gyurkovits Norbert. Budapesten élek 1983-ban születem. Ezt a weboldalt egyfajta online névjegyként, CV-ként hoztam létre, egyrészről bemutatkozásként, másrészt, pedig, hogy saját magam is nyomon tudjam követni a fejlődésemet. </p>
+            <button class="collapsible">sokkal több szöveg...</button>
+            <div class="content">
+              <p class="about-text">2001-ben egy műszaki szakközépiskola elvégzése után, nagy fába vágtam a fejszémet és beléptem a munkaerőpiacra. Az elmúlt 17 évben dolgoztam logisztika, vendéglátás, kereskedelem és pénzügyi területeken. Végeztem fizikai és szellemi munkát.<br><br>Ezen idő alatt rájöttem arra, hogy nekem bizony szükségem van a kihívásra, hogy olyan feladatokat oldhassak meg, amihez használni kell az agyamat, keresni kell a választ.  Pár évvel ezelőtt kezdtem el foglalkozni, digitális grafikával hobby szinten. Néztem a tutorialokat és megtetszett nekem, hogy minden felmerülő kérdésre ott a válasz a neten, ha egy design megtetszett, biztos, hogy rövid keresgélés után, találtam egy videót, amelyben meg tudtam nézni, hogy is kell azt megvalósítani. Egyre többet foglalkoztam ezzel, majd 2017-ben elvégeztem egy grafikus OKJ tanfolyamot.<br><br> Közben az élet persze nem állt meg, az iskola és a tanulás miatt felhalmozódó feladatok utolértek, és emiatt muszáj volt egy pici szünetet tartani a tanulásban. Ez a kis kihagyás viszont elég volt arra, hogy kitaláljam, hogyan tovább.  A grafikus képzés során, volt egy HTML, CSS minitanfolyam. Ahol is megtetszett ez a fajta munka, hiszen ez is egy olyan terület, ahol a munkámnak szinte azonnal látszik az eredménye, ráadásul a megoldásért néha törni kell a fejemet. :)<br><br> A célom, hogy folytassam a megkezdett utamat, szeretnék weboldalakat építeni,  fejleszteni a tudásomat. A későbbiekben pedig az IT terület szélesebb palettáját is megismerni és dolgozni benne. Attól függően, hogy mi fekszik nekem és mire lesz elég idő.</p>
+             </div>
+            <script>
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.display === "block") {
+                    content.style.display = "none";
+                  } else {
+                    content.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
         </div>
       </div>
       <div class="heading"><h2>Skills</h2></div>
@@ -112,6 +125,7 @@
           </div>
         </div>
       </div>
+      
     </body>
   </html>
 
